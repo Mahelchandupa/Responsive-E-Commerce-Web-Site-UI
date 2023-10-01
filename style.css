@@ -96,7 +96,7 @@ ul{
 
 @media (max-width: 750px) {
     .hero{
-        height: 60vh;
+        height: 65vh;
     }
     .hero_detail{
         padding-top: 70px;
