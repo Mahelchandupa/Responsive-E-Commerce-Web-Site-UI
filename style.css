@@ -96,9 +96,10 @@ ul{
 
 @media (max-width: 750px) {
     .hero{
-        height: 60vh;
+        min-height: 60vh;
     }
     .hero_detail{
+        margin-top: 80px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
