@@ -22,13 +22,23 @@
             <li class="nav_item"><a href="lookbook.html">LOOKBOOK</a></li>
             <li class="nav_item"><a href="">ABOUT US</a></li>
             <li class="nav_item"><a href="">CONTACT US</a></li>
-            <li class="nav_item cart"><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li class="nav_item cart"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
         </ul>
     </nav>
     <div class="menu_icon">
         <i class="fa-solid fa-bars"></i>
     </div>
 </header>
+
+<!-- Mobile Fixed Cart Icon -->
+  <div class="mobile_fixed_cart_icon_container">
+    <div>
+        <a href="cart.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
+    </div>
+</div>
+<!-- --- -->
 
 <!-- Single Product -->
 <section class="products-section">
@@ -47,9 +57,9 @@
               </p>
               <div class="product-options">
                   <div class="quantity-changer-container">
-                     <button id="decress"><i class="fa-solid fa-minus"></i></button>
-                     <input type="text" id="quantity" name="value" value="1" min="1" max="10">
-                     <button id="incress"><i class="fa-solid fa-plus"></i></button>
+                     <button class="decress"><i class="fa-solid fa-minus"></i></button>
+                     <input type="text" class="quantity" name="value" value="1" min="1" max="10">
+                     <button class="incress"><i class="fa-solid fa-plus"></i></button>
                   </div>
                   <button class="add-cart-btn">ADD TO CART</button>
               </div>

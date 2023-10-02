@@ -1,0 +1,210 @@
+body{
+    background-color: #eee;
+}
+.cart_main_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    font-family: "Open Sans", sans-serif;
+}
+.cart_sub_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 70px;
+    background-color: #fff;
+    width: 60%;
+}
+
+.cart_title{
+    font-family: 'Barlow Semi Condensed';
+    align-self: flex-start;
+    font-size: 40px;
+    font-weight: 400;
+    color: #54595f;
+}
+
+.cart_container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+/*-------- Small Screen Cart Table ------------ */
+.small_screen_cart_table_container{
+    display: none;
+    width: 100%;
+}
+
+thead{
+    background-color: rgb(245, 245, 245);
+    color: rgb(79, 79, 79);
+    font-weight: 400;
+    font-size: 16px;
+    overflow-wrap: break-word; 
+    text-align: left;
+}
+.cart_table tbody, .cart_table thead{
+    border-bottom: 1px solid rgb(206, 202, 202);
+}
+.cart_table th, .cart_total th{
+    padding: 16px;
+}
+.cart_table td{
+    padding: 11px 16px;
+} 
+.cart_table{
+  border: 1px solid rgb(206, 202, 202);
+  flex: 2;
+  border-collapse: collapse;
+  color: #4F4F4F;
+}
+.cart_total{
+  flex: 1;
+  border: 1px solid rgb(206, 202, 202);
+  border-collapse: separate;
+}
+.cart_total th{
+    font-family: 'Barlow Semi Condensed';
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.cart_total tbody td{
+    padding: 15px;
+    color: #4F4F4F;
+    vertical-align: top;
+}
+.cart_total button{
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #54595f;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.product_img img{
+    width: 70px;
+    object-fit: cover;
+}
+
+.remove_product_icon i{
+    font-size: 22px;
+    color: rgb(200, 211, 211);
+}
+
+
+/* quantity */
+.quantity-changer-container{
+    display: flex;
+    align-items: center;
+}
+.quantity-changer-container button{
+    cursor: pointer;
+}
+.quantity-changer-container button, .quantity-changer-container input{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid rgb(221, 221, 221);
+  background-color: transparent;
+  color: #4F4F4F;
+}
+/*---*/
+
+@media screen and (max-width: 1500px) {
+    .cart_sub_container{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cart_main_container{
+        margin-top: 120px;
+        margin-bottom: 40px;
+    }
+    .cart_sub_container{
+        width: 95%;
+        gap: 50px;
+        padding: 30px;
+    }
+    .cart_container{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .cart_table{
+        width: 100%;
+      }
+    .cart_total{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .cart_sub_container{
+        width: 95%;
+        gap: 50px;
+        padding: 40px 20px;
+    }
+    .cart_container{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .cart_table{
+        display: none;
+    }
+    .small_screen_cart_table_container{
+        display: block;
+    }
+    .small_screen_cart_table{
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid rgb(221, 221, 221);
+    }
+    .small_screen_cart_table tr td{
+        padding: 15px;
+    }
+    .small_screen_cart_table tr td:first-child, .small_screen_cart_table tr td:last-child{
+        border: none;
+        border-bottom: 1px solid rgb(221, 221, 221);
+    }
+    .small_screen_cart_table tr td:first-child{
+        text-align: left;
+        font-weight: 600;
+    }
+    .small_screen_cart_table tr td:last-child{
+        text-align: right;
+    }
+    .small_screen_cart_table .quantity_cc{
+       display: flex;
+       align-items: flex-end;
+       justify-content: flex-end;
+    }
+    .small_screen_cart_table th{
+        font-family: 'Barlow Semi Condensed';
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+    }
+    .small_screen_cart_table td{
+        color: #4F4F4F;
+    }
+    .product_img{
+        text-align: center;
+    }
+    
+}

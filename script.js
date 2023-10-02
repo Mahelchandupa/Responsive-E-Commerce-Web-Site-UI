@@ -39,9 +39,9 @@ ProductCat.innerHTML = `Category: ${cat}`
 
 
 /* change quantity */
-const IncressBtn = document.querySelector("#incress")
-const DecressBtn = document.querySelector("#decress")
-const QuntityInputField = document.querySelector("#quantity")
+const IncressBtn = document.querySelector(".incress")
+const DecressBtn = document.querySelector(".decress")
+const QuntityInputField = document.querySelector(".quantity")
 
 let quantity = 1
 

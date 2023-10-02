@@ -37,7 +37,7 @@
 }
 @media screen and (max-width: 550px) {
     .lookbook_hero_container{
-        height: 40vh;
+        height: 60vh;
         padding: 0 10px;
     }
     .lookbook_hero_main_title{

@@ -126,6 +126,34 @@ ul{
 
 /* ---------------- End hero ---------------- */
 
+/* -------------- Mobile Fixed Cart Icon ------------ */
+.mobile_fixed_cart_icon_container{
+    position: fixed;
+    background-color: #17013a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    bottom: 40px;
+    right: 30px;
+    display: none;
+    z-index: 1000;
+    border: 2px solid rgb(206, 124, 2);
+}
+.mobile_fixed_cart_icon_container div{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile_fixed_cart_icon_container div a{
+    color: #eee;
+}
+
+
+
 /* ------------------ Header ------------------ */
 
 header{
@@ -233,6 +261,9 @@ nav a{
     }
     .cart{
         display: none;
+    }
+    .mobile_fixed_cart_icon_container{
+        display: block;
     }
 
 }
