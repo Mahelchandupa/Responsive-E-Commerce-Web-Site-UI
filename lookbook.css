@@ -1,0 +1,205 @@
+.lookbook_hero_container{
+    background-image: linear-gradient(0deg, rgba(14, 10, 10, 0.6), rgba(12, 9, 9, 0.6) ), url(images/lookbook-banner.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0.93;
+}
+.lookbook_hero_detail_container{
+   text-align: center;
+   width: 600px;
+   color: #fff;
+}
+.lookbook_hero_main_title{
+    font-family: 'Barlow Semi Condensed';
+    font-size: 80px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.lookbook_hero_sub_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;    
+}
+
+@media screen and (max-width: 1200px) {
+    .lookbook_hero_container{
+        height: 70vh;
+    }
+    .lookbook_hero_main_title{
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .lookbook_hero_container{
+        height: 40vh;
+        padding: 0 10px;
+    }
+    .lookbook_hero_main_title{
+         margin-bottom: 10px;
+         font-size: 50px;
+    }
+    .lookbook_hero_sub_title{
+         font-size: 14px;    
+    } 
+}
+
+
+.lookbook_main_container{
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lookbook_container{
+    width: 60%;
+    display: grid;
+    grid-template-areas: 
+       "winter_for_mens summer_for_women"
+       "blazer_collection blazer_collection"
+       "womens_fashion_trends fall_winter_for_women"
+    ;
+    gap: 50px;
+}
+.winter_for_mens{
+    grid-area: winter_for_mens;
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/men-collection.jpg);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    opacity: 0.90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;   
+}
+.summer_for_women{
+    grid-area: summer_for_women;
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/women-collection-1.jpg);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    opacity: 0.90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+.blazer_collection{
+    grid-area: blazer_collection;
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/blazers.jpg);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    opacity: 0.90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+.womens_fashion_trends{
+    grid-area: womens_fashion_trends;
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/testimonial1.jpg);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    opacity: 0.90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+.fall_winter_for_women{
+    grid-area: fall_winter_for_women;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/testimonial2.jpg);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    opacity: 0.90;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+.lookbook_title{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.lookbook_desc{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 0.7cm;
+    margin-bottom: 15px;
+}
+.lookbook_btn{
+    border: none;
+    padding: 20px 36px 20px 36px;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #4f4f4f;
+    font-size: 13.45px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .lookbook_container{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .lookbook_container{
+        width: 95%;
+    }
+    .winter_for_mens, .summer_for_women, .blazer_collection, .womens_fashion_trends, .fall_winter_for_women{
+        padding: 0 20px;
+    }
+    .lookbook_title{
+        font-size: 30px;
+    }
+    .lookbook_desc{
+        font-size: 14px;
+
+    }
+}
+@media screen and (max-width: 750px) {
+    .lookbook_container{
+        grid-template-areas: 
+           "winter_for_mens"
+           "summer_for_women"
+           "blazer_collection"
+           "womens_fashion_trends"
+           "fall_winter_for_women"
+        ;
+        gap: 50px;
+    }
+    .winter_for_mens, .summer_for_women, .blazer_collection, .womens_fashion_trends, .fall_winter_for_women{
+        height: 400px;
+    }
+}
