@@ -24,7 +24,9 @@
 }
 .lookbook_hero_sub_title{
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;    
+    font-size: 17px; 
+    line-height: 0.8cm; 
+    font-weight: 300;  
 }
 
 @media screen and (max-width: 1200px) {
@@ -37,16 +39,19 @@
 }
 @media screen and (max-width: 550px) {
     .lookbook_hero_container{
-        height: 60vh;
+        height: 40vh;
         padding: 0 10px;
+        background-position: left;
     }
     .lookbook_hero_main_title{
          margin-bottom: 10px;
-         font-size: 50px;
+         font-size: 40px;
     }
     .lookbook_hero_sub_title{
-         font-size: 14px;    
-    } 
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px; 
+        line-height: 0.6cm; 
+    }
 }
 
 
@@ -177,7 +182,7 @@
 }
 @media screen and (max-width: 1000px) {
     .lookbook_container{
-        width: 95%;
+        width: 92%;
     }
     .winter_for_mens, .summer_for_women, .blazer_collection, .womens_fashion_trends, .fall_winter_for_women{
         padding: 0 20px;
