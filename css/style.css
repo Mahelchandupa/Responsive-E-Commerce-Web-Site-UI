@@ -169,7 +169,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 4000;
 }
 .header_other_page{
     background-color: #FFF;
@@ -247,9 +247,10 @@ nav a{
     nav ul li:last-child{
         border-bottom: none;
     }
-    nav a{
+    nav ul li a{
         font-size: 16px;
-        width: 100%;
+        display: block;
+        width: 100%;       
         color: gray;
     }
     .menu_icon{
@@ -293,7 +294,7 @@ nav a{
 
 .summer-collection{
     grid-area: summer-collection;
-    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 30%, rgb(226, 190, 48) 120%), url(images/new-collection-1.jpg); 
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 30%, rgb(226, 190, 48) 120%), url(../images/new-collection-1.jpg); 
     position: relative;
 }
 .summer-collection a{
@@ -318,7 +319,7 @@ nav a{
 
 .men-collection{
     grid-area: men-collection;
-    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/men-collection.jpg);
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(../images/men-collection.jpg);
     position: relative;
     padding: 0 20px;
 }
@@ -333,7 +334,7 @@ nav a{
 }
 .women-collection{
     grid-area:  women-collection;
-    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 40%, rgb(226, 48, 48) 100%), url(images/women-collection-1.jpg);
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 40%, rgb(226, 48, 48) 100%), url(../images/women-collection-1.jpg);
     position: relative;
     padding: 0 20px;
 }
@@ -348,7 +349,7 @@ nav a{
 }
 .free-shipping-collection{
     grid-area: free-shipping-collection;
-    background-image:  linear-gradient(to bottom, rgba(128, 121, 121, 0) 20%, rgb(111, 115, 131) 100%), url(images/fashion-accessories.jpg); 
+    background-image:  linear-gradient(to bottom, rgba(128, 121, 121, 0) 20%, rgb(111, 115, 131) 100%), url(../images/fashion-accessories.jpg); 
     position: relative;
     padding: 0 20px;
 }

@@ -1,0 +1,231 @@
+.about_hero_container{
+    background-image: url(../images/home-slider1.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.about_hero_container h1{
+    color: #fff;
+    font-family: 'Barlow Semi Condensed';
+    font-size: 80px;
+    font-weight: 300;
+    z-index: 2000;
+}
+.about_hero_overlay{
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(35, 35, 35, 0.6);
+    z-index: 2;
+}
+
+@media screen and (max-width: 550px) {
+    .about_hero_container h1{
+        font-size: 40px;
+    }
+}
+
+
+/* ------------ Elementor --------------- */
+.elementor_section{
+    width: 60%;
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 500px;
+}
+.elementor_left img{
+    width: 100%;
+    height: 100%;
+}
+.elementor_right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 500px;    
+}
+.leatest_top, .leatest_bottom{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+._leatest_desc h4{
+    font-family: 'Barlow Semi Condensed';
+    font-size: 30px;
+    font-weight: 400;
+    color: #303030;
+    margin-bottom: 20px;
+}
+._leatest_desc p{
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 0.7cm;
+    color: #5d5d5d;
+}
+
+@media screen and (max-width: 1500px) {
+    .elementor_section{
+        width: 80%;
+        margin: 70px auto 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .elementor_section{
+        width: 90%;
+        margin: 70px auto 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        height: 400px;
+    }
+    .elementor_right .leatest_img img{
+      width: 100px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .elementor_section{
+        width: 90%;
+        margin: 70px auto 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 50px;
+        height: auto;
+    }
+    .elementor_right .leatest_img img{
+      width: 100px;
+    }
+    .elementor_left img{
+       width: 100%;
+       height: 100%;
+    }
+    .elementor_right{
+      width: 100%;
+      margin-bottom: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+    .leatest_top, .leatest_bottom{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }  
+}
+@media screen and (max-width: 450px) {
+    ._leatest_desc h4{
+        font-size: 25px;
+    }
+    ._leatest_desc p{
+        font-size: 14px;
+    }
+}
+
+/* --------- Our Team ---------- */
+.our_team_container{
+    width: 60%;
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.our_team_title h1{
+    font-family: 'Barlow Semi Condensed';
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: #303030;
+    margin-bottom: 30px;
+}
+.our_team_title p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #5d5d5d;
+}
+.our_team_grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.team_card{
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.team_card_overlay{
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(111, 110, 110, 0.6);
+    z-index: 30;
+}
+.team_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.team_card .member_data{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 40;
+}
+.team_card .member_data h5{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.team_card .member_data p{
+    font-size: 15px;
+    color: rgb(7, 5, 5);
+}
+
+@media screen and (max-width: 1500px) { 
+  .our_team_container{
+    width: 90%;
+
+  }
+}
+
+@media screen and (max-width: 1000px) { 
+    .our_team_container{
+        width: 95%;
+    }
+    .our_team_grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) { 
+    .our_team_title h1{
+        font-size: 35px;
+    }
+    .our_team_title p{
+        font-size: 16px;
+    }
+    .team_card{
+        height: 180px;
+    }
+    .team_card_overlay{
+        height: 180px;
+    }
+}

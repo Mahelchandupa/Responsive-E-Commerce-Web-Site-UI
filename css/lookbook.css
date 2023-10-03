@@ -1,5 +1,5 @@
 .lookbook_hero_container{
-    background-image: linear-gradient(0deg, rgba(14, 10, 10, 0.6), rgba(12, 9, 9, 0.6) ), url(images/lookbook-banner.jpg);
+    background-image: linear-gradient(0deg, rgba(14, 10, 10, 0.6), rgba(12, 9, 9, 0.6) ), url(../images/lookbook-banner.jpg);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -51,10 +51,12 @@
 
 
 .lookbook_main_container{
-    margin: 60px 0;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 .lookbook_container{
     width: 60%;
@@ -68,7 +70,7 @@
 }
 .winter_for_mens{
     grid-area: winter_for_mens;
-    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/men-collection.jpg);
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(../images/men-collection.jpg);
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +85,7 @@
 }
 .summer_for_women{
     grid-area: summer_for_women;
-    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/women-collection-1.jpg);
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(../images/women-collection-1.jpg);
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -98,7 +100,7 @@
 }
 .blazer_collection{
     grid-area: blazer_collection;
-    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/blazers.jpg);
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(../images/blazers.jpg);
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +115,7 @@
 }
 .womens_fashion_trends{
     grid-area: womens_fashion_trends;
-    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/testimonial1.jpg);
+    background-image:  linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(../images/testimonial1.jpg);
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -128,7 +130,7 @@
 }
 .fall_winter_for_women{
     grid-area: fall_winter_for_women;
-    background-image: linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(images/testimonial2.jpg);
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0) 20%, rgb(226, 48, 48)  100%), url(../images/testimonial2.jpg);
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
